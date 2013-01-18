@@ -1,0 +1,43 @@
+.ipad #aof-wrapper {
+	position:absolute;
+	/*
+	width:1024px;
+	height:768px;
+	*/
+}
+@media only screen and (device-width: 768px) and (device-height: 1024px) #aof-wrapper {
+	width:768px;
+	height:1024px;
+}
+@media only screen and (device-height: 768px) and (device-width: 1024px) #aof-wrapper {
+	width:1024px;
+	height:768px;
+}
+.ipad #faux-scroll {
+	height:1px;
+}
+.ipad #layer-bg {
+	background-image:url('../images/p3/body_bg_ipad.jpg');
+	-webkit-background-size:5587px 4299px;
+}
+.ipad #news-history-scroll, .ipad #world-tour-scroll {
+	width:16px;
+	padding:11px 0;
+	background: url('../images/p3/scrollbar_arrow_up.png') top center no-repeat, url('../images/p3/scrollbar_arrow_down.png') bottom center no-repeat;
+}
+.ipad #news-history-scroll .custom-scroll-bar, .ipad #world-tour-scroll .custom-scroll-bar {
+	background:transparent url('../images/p3/scrollbar_track.png') top center repeat-y;
+}
+
+.ipad #world-tour-scroll {
+	height:288px;
+	right:17px;
+}
+
+.ipad #news-history {
+	width: 616px;
+}
+.ipad #news-history-scroll {
+	height:398px;
+	left:601px;
+}

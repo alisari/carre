@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0}
+html,body{height:100%;
+
+/*overflow:hidden; */
+font-family:Tahoma, Geneva, sans-serif;
+}
+
+.map{
+	background-image:url(../img/yol.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	width:173px;
+	height:3000px;
+	z-index:10;
+	top:0px;
+	}
+
+li{list-style:none}
+
+.slider2
+{
+margin-top:20px;
+width:800px;
+position:absolute;
+}
+
+.uretim-bg{
+	position:absolute;
+	width:760px;
+	height:492px;
+	margin-top:16px
+	
+}
+
+.wrapper{
+position:relative;
+height:1000px;
+}
+
+.logo{
+	background-image:url(../img/carre-logo.png);
+	background-repeat:no-repeat;
+	position:fixed;
+	width:180px;
+	height:49px;
+	z-index:12;
+	top:0px;
+}
+
+.blacklist{
+	background-image:url(../img/blacklist.png);
+	background-repeat:no-repeat;
+	width:360px;
+	height:95px;
+	position:absolute;
+	top:80px;	
+}
+
+
+.slider{
+	position:absolute;	
+	width:700px;
+	height:400px;
+	top:200px;
+	z-index:10
+}
+
+.build{position:fixed; z-index:9}
+
+
+.bg{
+position:fixed;
+z-index:-1;
+top:0px;
+left:0px;
+}
+
+.footer{
+position:fixed;
+z-index:9999999;
+
+}
+
+
+#kurumsal
+{
+	margin-top:29px;
+	background-image:url(../img/kurumsal2.png);
+	width:864px;
+	height:562px;
+	background-repeat:no-repeat;
+	position:absolute;
+}
+
+#urunler
+{
+	margin-top:54px;
+	background-image:url(../img/urunler.png);
+	width:828px;
+	height:562px;
+	background-repeat:no-repeat;
+	position:absolute;
+}
+
+
+#uretim
+{
+	margin-top:29px;
+	background-image:url(../img/kurumsal2.png);
+	width:750px;
+	height:492px;
+	background-repeat:no-repeat
+}
+
+
+
+.build-l{
+	margin-top:210px;
+	background-image:url(../img/build-l.png);
+	background-repeat:no-repeat;
+	width:316px;
+	height:190px;
+	position:absolute;
+	left:0px;
+}
+
+.build-r{
+	margin-top:120px;
+	background-image:url(../img/build-r.png);
+	background-repeat:no-repeat;
+	width:317px;
+	height:250px;
+	position:fixed;
+	right:0px;
+
+}
+
+
+.footer_menu{
+position:absolute;
+width:1130px;
+height:45px;
+}
+
+.footer_alt{
+position:absolute;
+width:550px;
+height:26px;
+z-index:99;
+}
+
+.footer_orta{
+position:absolute;
+width:306px;
+height:73px;
+z-index:9999;
+}
+
+
+
+.loader{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -12px;
+	margin-left: -12px;
+	z-index: 9999;
+	background: url(../img/loader.png) left top no-repeat;
+	background-size: 480px 24px;
+}
+
+
+

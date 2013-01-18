@@ -1,0 +1,378 @@
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.logo{background-image:url(../../img/carre-logo.png);
+	background-repeat:no-repeat;
+	position:fixed;
+	width:133px;
+	height:49px;
+	z-index:999991;
+	top:0px;
+	display:none;
+}
+.spinner{
+position:absolute;
+z-index:301;
+}
+.loader{
+width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -12px;
+	margin-left: -12px;
+	z-index: 9999;
+	background: url(../../img/loader.png) left top no-repeat;
+	background-size: 480px 24px;
+}
+	
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; }
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+a, a:hover, a:active { outline: none; border:none;}
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+textarea { overflow: auto; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+::-moz-selection{ background: #2DB9D2; color:#fff; text-shadow: none; }
+::selection { background:#2DB9D2; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #C51931; }
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea { color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+a, a:active, a:visited { color: #7e1f2c; }
+a:hover { color: #C51931; }
+
+
+
+body {
+	height:100%; /*--fullscreen--*/
+	background-color:#FFFFFF;
+	/*color:#4C4C4C;*/
+	color:#353535;
+	font-weight:300;
+	font-size:11px;
+	font-family:"lucida grande",sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #2DB9D2;
+	text-transform:uppercase;
+}
+h3 {
+	font-size:16px;
+	font-weight:500;
+	letter-spacing: 0.025em;
+}
+
+#faux-scroll {
+	height:30000px;
+}
+#carre-wrapper {
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+#carre-wrapper.enhanced {
+	display:block;
+}
+#layer-bg {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:5587px;
+	height:4299px;
+	z-index:1;
+	background:transparent url('../images/p3/body_bg.jpg') center center no-repeat;
+}
+#layer-parallax-items {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:9600px;
+	height:6360px;
+	z-index:2;
+}
+#layer-content {
+	position:absolute;
+	top:0;
+	left:0;
+	width:9600px;
+	height:6360px;
+	z-index:3;
+}
+.content-page {
+	position:absolute;
+	width:980px;
+	height:460px;
+}
+#content-page-1  { left:700px; top:840px; }
+#content-page-2  { left:4326px; top:2280px; }
+#content-page-3  { left:7440px; top:4484px; }
+#content-page-4  { left:7120px; top:742px; }
+#content-page-5  { left:3666px; top:782px; }
+#content-page-6  { left:494px; top:2370px; }
+#content-page-7  { left:1950px; top:5008px; }
+
+#content-page-8 {
+	border:1px solid #ffff00;
+}
+.content-anchor {
+	display:none;
+}
+#layer-menu {
+	display:none;
+	position:absolute;
+	width:100%;
+	height:80px;
+	z-index:300;
+}
+
+#main-menu-content {
+	position:absolute;
+	width:1120px;
+	height:80px;
+	z-index:302;
+	
+}
+
+
+#main-menu-content #fb-like-main {
+	width:100px;
+	height:21px;
+	overflow:hidden;
+	position:absolute;
+	top:37px;
+	right:6px;
+}
+
+
+#main-menu-items {
+	display:block;
+	list-style:none;
+	width:1120px;
+	height:73px;
+	position:absolute;
+}
+#main-menu-items li {
+	display:block;
+	float:left;
+	height:12px;
+	margin-right:18px;
+	overflow:hidden;
+}
+#main-menu-items li.nav-index { width:65px; }
+#main-menu-items li.nav-kurumsal { width:44px; }
+#main-menu-items li.nav-urunler { width:57px; }
+#main-menu-items li.nav-bayilerimiz { width:57px; }
+#main-menu-items li.nav-uretim { width:60px; }
+#main-menu-items li.nav-ik { width:35px; }
+#main-menu-items li.nav-iletisim { width:98px;  }
+#main-menu-items li a {
+	display:block;
+	width:100%;
+	height:45px;
+	text-indent:-30000em;
+	overflow:hidden;
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+}
+
+#main-menu-items li.nav-index a {width:167px; height:45px;}
+#main-menu-items li.nav-kurumsal a {width:152px; height:45px; }
+#main-menu-items li.nav-urunler a { width:140px; height:45px; }
+#main-menu-items li.nav-uretim a { width:128px; height:45px; }
+#main-menu-items li.nav-ik a {width:207px; height:45px; }
+#main-menu-items li.nav-iletisim a { width:140px; height:45px; }
+
+
+
+
+
+/* ---- Parallax Items ---- */
+.parallax-item {
+	position:absolute;
+	overflow:hidden;
+}
+#parallax-item-1 {
+	top:1113px;
+	left:689px;
+	width:147px;
+	height:148px;
+	background-image:url('../images/p3/parallax/item1.png');
+}
+#parallax-item-2 {
+	top:895px;
+	left:1277px;
+	width:252px;
+	height:111px;
+	background-image:url('../images/p3/parallax/item2.png');
+}
+#parallax-item-3 {
+	top:1425px;
+	left:1556px;
+	width:205px;
+	height:115px;
+	background-image:url('../images/p3/parallax/item3_24bit.png'); /*-- 8bit not good enough --*/
+}
+#parallax-item-4 {
+	top:1090px;
+	left:2007px;
+	width:421px;
+	height:201px;
+	background-image:url('../images/p3/parallax/item4.png');
+}
+#parallax-item-5 {
+	top:936px;
+	left:3154px;
+	width:320px;
+	height:422px;
+	background-image:url('../images/p3/parallax/item5.png');
+}
+#parallax-item-6 {
+	top:924px;
+	left:3650px;
+	width:388px;
+	height:530px;
+	background-image:url('../images/p3/parallax/item6.png');
+}
+#parallax-item-7 {
+	top:1875px;
+	left:548px;
+	width:208px;
+	height:383px;
+	background-image:url('../images/p3/parallax/item7.png');
+}
+#parallax-item-8 {
+	top:1761px;
+	left:2309px;
+	width:296px;
+	height:182px;
+	background-image:url('../images/p3/parallax/item8.png');
+}
+#parallax-item-9 {
+	top:2240px;
+	left:2850px;
+	width:657px;
+	height:415px;
+	background-image:url('../images/p3/parallax/item9.png');
+}
+#parallax-item-10 {
+	top:1974px;
+	left:3994px;
+	width:667px;
+	height:364px;
+	background-image:url('../images/p3/parallax/item10.png');
+}
+#parallax-item-11 {
+	top:1575px;
+	left:4656px;
+	width:151px;
+	height:353px;
+	background-image:url('../images/p3/parallax/item11.png');
+}
+#parallax-item-12 {
+	top:3153px;
+	left:1346px;
+	width:203px;
+	height:282px;
+	background-image:url('../images/p3/parallax/item12.png');
+}
+#parallax-item-13 {
+	top:2989px;
+	left:1963px;
+	width:702px;
+	height:587px;
+	background-image:url('../images/p3/parallax/item13.png');
+}
+#parallax-item-14 {
+	top:2936px;
+	left:3868px;
+	width:334px;
+	height:351px;
+	background-image:url('../images/p3/parallax/item14.png');
+}
+#parallax-item-15 {
+	top:2933px;
+	left:5012px;
+	width:221px;
+	height:217px;
+	background-image:url('../images/p3/parallax/item15.png');
+}
+
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
